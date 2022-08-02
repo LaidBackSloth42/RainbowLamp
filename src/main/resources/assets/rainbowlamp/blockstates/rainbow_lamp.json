@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "power=0": {
+      "model": "rainbowlamp:block/rainbow_lamp_black"
+    },
+    "power=1": {
+      "model": "rainbowlamp:block/rainbow_lamp_gray"
+    },
+    "power=2": {
+      "model": "rainbowlamp:block/rainbow_lamp_light_gray"
+    },
+    "power=3": {
+      "model": "rainbowlamp:block/rainbow_lamp_brown"
+    },
+    "power=4": {
+      "model": "rainbowlamp:block/rainbow_lamp_green"
+    },
+    "power=5": {
+      "model": "rainbowlamp:block/rainbow_lamp_lime"
+    },
+    "power=6": {
+      "model": "rainbowlamp:block/rainbow_lamp_cyan"
+    },
+    "power=7": {
+      "model": "rainbowlamp:block/rainbow_lamp_blue"
+    },
+    "power=8": {
+      "model": "rainbowlamp:block/rainbow_lamp_light_blue"
+    },
+    "power=9": {
+      "model": "rainbowlamp:block/rainbow_lamp_purple"
+    },
+    "power=10": {
+      "model": "rainbowlamp:block/rainbow_lamp_magenta"
+    },
+    "power=11": {
+      "model": "rainbowlamp:block/rainbow_lamp_pink"
+    },
+    "power=12": {
+      "model": "rainbowlamp:block/rainbow_lamp_red"
+    },
+    "power=13": {
+      "model": "rainbowlamp:block/rainbow_lamp_orange"
+    },
+    "power=14": {
+      "model": "rainbowlamp:block/rainbow_lamp_yellow"
+    },
+    "power=15": {
+      "model": "rainbowlamp:block/rainbow_lamp_white"
+    }
+  }
+}

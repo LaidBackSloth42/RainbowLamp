@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "rainbowlamp",
+  "version": "fabric-1.0-1.19",
+
+  "name": "Rainbow Lamp",
+  "description": "This mod adds a Redstone Lamp, which changes color dependent on its Redstone input.",
+  "authors": [
+    "LaidBackSloth42"
+  ],
+
+  "license": "MIT License",
+  "icon": "assets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.laidbacksloth42.rainbowlamp.RainbowLamp"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
