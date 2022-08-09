@@ -1,51 +1,51 @@
 {
   "variants": {
-    "power=0": {
+    "color=0": {
       "model": "rainbowlamp:block/rainbow_lamp_black"
     },
-    "power=1": {
+    "color=1": {
       "model": "rainbowlamp:block/rainbow_lamp_gray"
     },
-    "power=2": {
+    "color=2": {
       "model": "rainbowlamp:block/rainbow_lamp_light_gray"
     },
-    "power=3": {
+    "color=3": {
       "model": "rainbowlamp:block/rainbow_lamp_brown"
     },
-    "power=4": {
+    "color=4": {
       "model": "rainbowlamp:block/rainbow_lamp_green"
     },
-    "power=5": {
+    "color=5": {
       "model": "rainbowlamp:block/rainbow_lamp_lime"
     },
-    "power=6": {
+    "color=6": {
       "model": "rainbowlamp:block/rainbow_lamp_cyan"
     },
-    "power=7": {
+    "color=7": {
       "model": "rainbowlamp:block/rainbow_lamp_blue"
     },
-    "power=8": {
+    "color=8": {
       "model": "rainbowlamp:block/rainbow_lamp_light_blue"
     },
-    "power=9": {
+    "color=9": {
       "model": "rainbowlamp:block/rainbow_lamp_purple"
     },
-    "power=10": {
+    "color=10": {
       "model": "rainbowlamp:block/rainbow_lamp_magenta"
     },
-    "power=11": {
+    "color=11": {
       "model": "rainbowlamp:block/rainbow_lamp_pink"
     },
-    "power=12": {
+    "color=12": {
       "model": "rainbowlamp:block/rainbow_lamp_red"
     },
-    "power=13": {
+    "color=13": {
       "model": "rainbowlamp:block/rainbow_lamp_orange"
     },
-    "power=14": {
+    "color=14": {
       "model": "rainbowlamp:block/rainbow_lamp_yellow"
     },
-    "power=15": {
+    "color=15": {
       "model": "rainbowlamp:block/rainbow_lamp_white"
     }
   }
