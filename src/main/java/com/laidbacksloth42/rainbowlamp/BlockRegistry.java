@@ -22,7 +22,7 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> RAINBOW_LAMP_BLOCK = BLOCKS.register("rainbow_lamp",
             () -> new RainbowLampBlock(BlockBehaviour.Properties.of(Material.BUILDABLE_GLASS).strength(0.3F).sound(SoundType.GLASS).isValidSpawn(BlockRegistry::always)
-                    .lightLevel((state) -> state.getValue(RainbowLampBlock.POWER) == 0 ? 0 : 15)));
+                    .lightLevel((state) -> state.getValue(RainbowLampBlock.COLOR) == 0 ? 0 : 15)));
 
     public static final RegistryObject<Item> RAINBOW_LAMP_ITEM =  ITEMS.register("rainbow_lamp",
             () -> new BlockItem(RAINBOW_LAMP_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
