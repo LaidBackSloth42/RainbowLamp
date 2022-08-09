@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "rainbowlamp",
-  "version": "fabric-1.0-1.19",
+  "version": "1.1-1.19.X",
 
   "name": "Rainbow Lamp",
-  "description": "This mod adds a Redstone Lamp, which changes color dependent on its Redstone input.",
+  "description": "This mod adds a Redstone Lamp, which changes color dependent on its Redstone input. You can also cycle through all colors by right-clicking the lamp.",
   "authors": [
     "LaidBackSloth42"
   ],
