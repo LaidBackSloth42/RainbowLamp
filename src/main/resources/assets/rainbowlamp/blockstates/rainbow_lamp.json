@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "color=0": {
+      "model": "rainbowlamp:block/rainbow_lamp_black"
+    },
+    "color=1": {
+      "model": "rainbowlamp:block/rainbow_lamp_gray"
+    },
+    "color=2": {
+      "model": "rainbowlamp:block/rainbow_lamp_light_gray"
+    },
+    "color=3": {
+      "model": "rainbowlamp:block/rainbow_lamp_brown"
+    },
+    "color=4": {
+      "model": "rainbowlamp:block/rainbow_lamp_green"
+    },
+    "color=5": {
+      "model": "rainbowlamp:block/rainbow_lamp_lime"
+    },
+    "color=6": {
+      "model": "rainbowlamp:block/rainbow_lamp_cyan"
+    },
+    "color=7": {
+      "model": "rainbowlamp:block/rainbow_lamp_blue"
+    },
+    "color=8": {
+      "model": "rainbowlamp:block/rainbow_lamp_light_blue"
+    },
+    "color=9": {
+      "model": "rainbowlamp:block/rainbow_lamp_purple"
+    },
+    "color=10": {
+      "model": "rainbowlamp:block/rainbow_lamp_magenta"
+    },
+    "color=11": {
+      "model": "rainbowlamp:block/rainbow_lamp_pink"
+    },
+    "color=12": {
+      "model": "rainbowlamp:block/rainbow_lamp_red"
+    },
+    "color=13": {
+      "model": "rainbowlamp:block/rainbow_lamp_orange"
+    },
+    "color=14": {
+      "model": "rainbowlamp:block/rainbow_lamp_yellow"
+    },
+    "color=15": {
+      "model": "rainbowlamp:block/rainbow_lamp_white"
+    }
+  }
+}
