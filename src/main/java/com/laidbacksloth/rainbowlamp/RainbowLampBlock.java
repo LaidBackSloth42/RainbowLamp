@@ -1,4 +1,4 @@
-package com.laidbacksloth42.rainbowlamp;
+package com.laidbacksloth.rainbowlamp;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class RainbowLampBlock extends Block {
@@ -37,7 +38,7 @@ public class RainbowLampBlock extends Block {
     }
 
     @Override
-    public void neighborChanged(BlockState pState, Level pLevel, BlockPos pPos, Block pBlock, BlockPos pFromPos, boolean pIsMoving) {
+    public void neighborChanged(@NotNull BlockState pState, Level pLevel, @NotNull BlockPos pPos, @NotNull Block pBlock, @NotNull BlockPos pFromPos, boolean pIsMoving) {
         if (!pLevel.isClientSide && pState.getValue(POWER) != pLevel.getBestNeighborSignal(pPos)) {
             int power = pLevel.getBestNeighborSignal(pPos);
             pLevel.setBlock(pPos, pState.setValue(POWER, power).setValue(COLOR, power), 2);
@@ -45,7 +46,7 @@ public class RainbowLampBlock extends Block {
     }
 
     @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    public @NotNull InteractionResult use(@NotNull BlockState pState, Level pLevel, @NotNull BlockPos pPos, @NotNull Player pPlayer, @NotNull InteractionHand pHand, @NotNull BlockHitResult pHit) {
         if (!pLevel.isClientSide && !pLevel.hasNeighborSignal(pPos) && pHand == InteractionHand.MAIN_HAND && !pPlayer.isShiftKeyDown()) {
             int color = pState.getValue(COLOR);
             if (color < 15) {

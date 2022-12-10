@@ -1,41 +1,24 @@
 modLoader="javafml"
-
-loaderVersion="[41,)"
-
+loaderVersion="[${minForgeVersion},)"
 license="MIT License"
-
+issueTrackerURL="https://github.com/LaidBackSloth/${main}/issues"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/${curseforge}"
 [[mods]]
-
-modId="rainbowlamp"
-
-version="1.1-1.19.X"
-
-displayName="Rainbow Lamp"
-
-logoFile="logo.png"
-
-authors="LaidBackSloth42"
-
-description='''
-This mod adds a Redstone Lamp, which changes color dependent on its Redstone input. You can also cycle through all colors by right-clicking the lamp.
-'''
-
-[[dependencies.rainbowlamp]] #optional
-    # the modid of the dependency
-    modId="forge" #mandatory
-    # Does this dependency have to exist - if not, ordering below must be specified
-    mandatory=true #mandatory
-    # The version range of the dependency
-    versionRange="[41,)" #mandatory
-    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+modId="${id}"
+version="${version}"
+displayName="${name}"
+logoFile="icon.png"
+authors="LaidBackSloth"
+description="${description}"
+[[dependencies.${id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="[${minForgeVersion},)"
     ordering="NONE"
-    # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-# Here's another dependency
-[[dependencies.rainbowlamp]]
+[[dependencies.${id}]]
     modId="minecraft"
     mandatory=true
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.19,1.20)"
+    versionRange="[${minecraftVersion},${nextMinecraftVersion})"
     ordering="NONE"
     side="BOTH"

@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Rainbow Lamps resources",
+        "description": "${name} resources",
         "pack_format": 9
     }
 }

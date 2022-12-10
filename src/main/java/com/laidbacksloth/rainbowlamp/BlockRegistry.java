@@ -1,9 +1,8 @@
-package com.laidbacksloth42.rainbowlamp;
+package com.laidbacksloth.rainbowlamp;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +24,7 @@ public class BlockRegistry {
                     .lightLevel((state) -> state.getValue(RainbowLampBlock.COLOR) == 0 ? 0 : 15)));
 
     public static final RegistryObject<Item> RAINBOW_LAMP_ITEM =  ITEMS.register("rainbow_lamp",
-            () -> new BlockItem(RAINBOW_LAMP_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_REDSTONE)));
+            () -> new BlockItem(RAINBOW_LAMP_BLOCK.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
