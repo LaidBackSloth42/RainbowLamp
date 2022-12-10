@@ -1,4 +1,4 @@
-package com.laidbacksloth42.rainbowlamp;
+package com.laidbacksloth.rainbowlamp;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

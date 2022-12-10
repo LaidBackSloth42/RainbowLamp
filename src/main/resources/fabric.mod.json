@@ -1,28 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "rainbowlamp",
-  "version": "1.1-1.19.X",
-
-  "name": "Rainbow Lamp",
-  "description": "This mod adds a Redstone Lamp, which changes color dependent on its Redstone input. You can also cycle through all colors by right-clicking the lamp.",
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "${description}",
   "authors": [
-    "LaidBackSloth42"
+    "LaidBackSloth"
   ],
-
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/${curseforge}",
+    "issues": "https://github.com/LaidBackSloth/${main}/issues",
+    "sources": "https://github.com/LaidBackSloth/${main}"
+  },
   "license": "MIT License",
-  "icon": "assets/icon.png",
-
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.laidbacksloth42.rainbowlamp.RainbowLamp"
+      "com.laidbacksloth.${id}.${main}"
     ]
   },
-
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=${loaderVersion}",
     "fabric": "*",
-    "minecraft": "~1.19",
+    "minecraft": "~${minecraftVersion}",
     "java": ">=17"
   },
   "suggests": {
