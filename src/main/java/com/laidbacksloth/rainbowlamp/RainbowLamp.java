@@ -17,7 +17,8 @@ public class RainbowLamp {
     }
 
     public void creativeModTabs(CreativeModeTabEvent.BuildContents event) {
-        event.registerSimple(CreativeModeTabs.REDSTONE_BLOCKS, BlockRegistry.RAINBOW_LAMP_ITEM.get());
-        event.registerSimple(CreativeModeTabs.FUNCTIONAL_BLOCKS, BlockRegistry.RAINBOW_LAMP_ITEM.get());
+        if (event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS || event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(BlockRegistry.RAINBOW_LAMP_ITEM.get());
+        }
     }
 }
