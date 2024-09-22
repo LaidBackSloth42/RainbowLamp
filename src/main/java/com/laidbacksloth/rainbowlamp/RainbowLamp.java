@@ -1,7 +1,7 @@
 package com.laidbacksloth.rainbowlamp;
 
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,8 +16,8 @@ public class RainbowLamp {
         eventBus.addListener(this::creativeModTabs);
     }
 
-    public void creativeModTabs(CreativeModeTabEvent.BuildContents event) {
-        if (event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS || event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+    public void creativeModTabs(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS || event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(BlockRegistry.RAINBOW_LAMP_ITEM.get());
         }
     }
